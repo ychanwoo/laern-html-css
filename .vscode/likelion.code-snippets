@@ -31,4 +31,11 @@
     ],
     "description": "figure, img, figcaption",
   },
+  "Open link in a new tab securely": {
+    "prefix": "safe_a",
+    "body": [
+      "<a href=\"$0\" target=\"_blank\" rel=\"noopener noreferrer\">$1</a>",
+    ],
+    "description": "Open link in a new tab securely",
+  },
 }
