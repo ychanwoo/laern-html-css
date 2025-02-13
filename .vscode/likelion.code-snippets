@@ -21,4 +21,14 @@
     ],
     "description": "카페경험",
   },
+  "figure, img, figcaption": {
+    "prefix": "figimg",
+    "body": [
+      "<figure$0>",
+      "      <img src=\"$1\" alt=\"$2\" />",
+      "      <figcaption>$3</figcaption>",
+      "    </figure>",
+    ],
+    "description": "figure, img, figcaption",
+  },
 }
