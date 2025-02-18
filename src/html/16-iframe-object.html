@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iframe, object 요소</title>
+  </head>
+  <body>
+    <!-- iframe을 활용하여 비디오 삽입하기 -->
+    <!-- title 가상커서가 이동함 -->
+    <!-- 전체화면 확대하려면 allowfullscreen 설정 -->
+    <!-- 보안정보에 대한 속성 referrerpolicy -->
+    <iframe
+      width="490"
+      height="276"
+      src="https://www.youtube.com/embed/C6nKJY8eqCk"
+      title="중동 메시라고 불리던 남태희 선수 주요장면 "
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <hr />
+    <figure>
+      <object
+        type="application/pdf"
+        data="/src/assets/pdf/wai-aria.pdf"
+        width="600"
+        height="430"
+      ></object>
+      <figcaption>WAI-ARIA</figcaption>
+    </figure>
+  </body>
+</html>
