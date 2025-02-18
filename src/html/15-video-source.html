@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>vdeio, source 요소</title>
+  </head>
+  <body>
+    <!-- <video controls>
+      <source
+        src="/src/assets/video/google-developer-stories.mp4"
+        type="video/mp4"
+      />
+      <source
+        src="/src/assets/video/google-developer-stories.ogg"
+        type="video/ogg"
+      />
+      <source
+        src="/src/assets/video/google-developer-stories.mov"
+        type="video/mov"
+      />
+      <source
+        src="/src/assets/video/google-developer-stories.webm"
+        type="video/webm"
+      />
+    </video> -->
+    <!-- <video
+      controls
+      src="/src/assets/video/google-developer-stories.mp4"
+    ></video> -->
+    <!-- muted 음소거 autoplay 자동재생 -->
+    <!-- autoplay 자동재생 지원 안됨 -->
+    <!-- poster ="" -->
+    <video controls muted poster="/src/assets/video/poster.jpg">
+      <source
+        src="/src/assets/video/google-developer-stories.mp4"
+        type="video/mp4"
+      />
+      <!-- .vtt 자막 파일 -->
+      <!-- srclang 자막언어 -->
+      <track
+        src="/src/assets/video/stories-en.vtt"
+        kind="captions"
+        srclang="en"
+        label="English Caption"
+      />
+    </video>
+  </body>
+</html>
