@@ -10,7 +10,7 @@
     <h2>input 요소</h2>
     <!-- 한 줄 입력서식 -->
     <!-- action은 submit함 (서버로 전송할 주소 값) -->
-    <form action="/">
+    <form action="/" method="post">
       <fieldset>
         <legend>폼 서식</legend>
         <div>
@@ -21,6 +21,8 @@
             id="userName"
             required
             placeholder="예)홍길동"
+            maxlength="5"
+            minlength="3"
           />
         </div>
         <div>
@@ -41,8 +43,53 @@
           <label for="userEmail">이메일</label>
           <input type="email" name="userEmail" id="userEmail" required />
         </div>
+        <div>
+          <label for="userPhone">연락처</label>
+          <input type="tel" name="userPhone" id="userPhone" required />
+        </div>
+        <!-- checkbox -->
+        <div>
+          <input
+            type="checkbox"
+            value="html"
+            checked
+            name="classLikelion"
+            id="classHtml"
+          />
+          <label for="classHtml">HTML</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            value="css"
+            name="classLikelion"
+            id="classCSS"
+          />
+          <label for="classCSS">CSS</label>
+        </div>
+        <div>
+          <input type="checkbox" value="js" name="classLikelion" id="classJS" />
+          <label for="classJS">JS</label>
+        </div>
+        <!-- radio 버튼 -->
+        <div>
+          <input
+            type="radio"
+            value="classRoom1"
+            checked
+            name="classRoom"
+            id="classRoom1"
+          />
+          <label for="classRoom1">회고 1팀</label>
+        </div>
+        <div>
+          <input type="radio" name="classRoom" id="classRoom2" />
+          <label for="classRoom2">회고 2팀</label>
+        </div>
+        <!-- 전송 버튼 -->
         <!-- 위 모든 값들을 form요소에 있는 action에 보냄 -->
         <input type="submit" value="전송" />
+        <button type="submit">전송</button>
       </fieldset>
     </form>
   </body>
