@@ -1,0 +1,35 @@
+/* 루트 요소 */
+:root {
+  /* font-size: 10px; */
+  font-size: clamp(12px, 3vw, 24px);
+}
+/* html{
+  이것도 루트 요소임
+} */
+
+body {
+  font-family: 'SUIT', sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+div {
+  font-size: 1.5em;
+}
+
+/* font-size 관련 속성 - 글자 크기 */
+.size {
+  color: green;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1;
+  font-variant: small-caps;
+  font-family: 'pretendard variable', sans-serif;
+  /* font: bold italic small-caps 24px / 1.5 'pretendard variable'; */
+}
+/* 단위 - rem (root equal m의 약자 */
