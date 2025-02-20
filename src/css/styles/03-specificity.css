@@ -1,0 +1,39 @@
+body * {
+  margin: 0;
+}
+
+body {
+  color: olive;
+  margin: 0;
+}
+
+h1 {
+  font-size: 1em;
+}
+
+.ai {
+  background-color: orange !important;
+}
+
+/* body가 DOM트리 구조상 p의 부모나 조부모 레벨임 */
+body h2 + p {
+  background-color: yellow;
+}
+
+body p[class] {
+  background-color: lime;
+}
+
+#ai {
+  background-color: pink;
+}
+
+/* shortend 프로퍼티 */
+.ai.copilot {
+  border: 10px dotted blue;
+}
+
+/* inherit:부모로 부터 상속 받은 값을 사용할거야 */
+a {
+  color: inherit;
+}
