@@ -1,0 +1,29 @@
+div {
+  border: 1px solid black;
+  width: 500px;
+}
+
+.inline {
+  /* width 와 height 지정 불가 */
+  display: inline;
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.inline-block {
+  /* width 와 height 지정 가능 */
+  display: inline-block;
+  background-color: lightgreen;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.block {
+  /* width 와 height 지정 가능 */
+  display: block;
+  background-color: lightcoral;
+  padding: 10px;
+  margin-bottom: 10px;
+  height: 100px;
+}
