@@ -1,0 +1,23 @@
+.container1, .container2 {
+  background-color: pink;
+  padding: 20px;
+}
+
+.boxModel1 {
+  display: block;
+  background-color: yellow;
+  box-sizing: content-box;
+  width: 100px;
+  padding: 20px;
+  border: 3px solid black;
+}
+
+.boxModel2 {
+  display: block;
+  background-color: aquamarine;
+  box-sizing: border-box;
+  width: 100px;
+  padding: 20px;
+  border: 3px solid black;
+}
+
