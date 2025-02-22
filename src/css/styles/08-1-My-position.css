@@ -1,0 +1,27 @@
+.first{
+  border: 5px solid black;
+  width: 250px;
+  height: 200px;
+  position: relative;
+  top: 20px;
+  left: 20px;
+
+  #two{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+    background-color: blue;
+    color: #fff;
+  }
+}
+
+.second{
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  position: relative;
+  top: 100px;
+  left: 100px;
+}
