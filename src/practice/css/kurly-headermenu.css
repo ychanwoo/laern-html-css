@@ -1,0 +1,24 @@
+
+
+.item, .cItem {
+  text-decoration: none;
+  color: black;
+  &:hover{
+    color: purple;
+  }
+}
+
+
+.item::before{
+  content: ":";
+  padding-left: 9px;
+  padding-right: 15px;
+}
+
+.item.first::before{
+  content: " ";
+}
+
+.content{
+  list-style: none;
+}
