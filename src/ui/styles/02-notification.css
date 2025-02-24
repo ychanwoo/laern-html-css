@@ -1,0 +1,85 @@
+@import "/src/common/mini-reset.css";
+
+:root{
+  /* 색상 */
+  --green: #22BE61;
+  --silver: #929B90;
+  --brown: #E3A368; 
+
+  /* 여백 */
+  --spacing-10: .625rem;
+  --spacing-20: 1.25rem;
+  --spacing-70: 4.375rem;
+
+  /* 글자 크기 */
+  --large: 1.125rem;
+  --medium: .875rem;
+  --small: .75rem;
+}
+
+body{
+  margin: 50px;
+}
+
+h1{
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+/* 알림 */
+.notification.brown{
+  background: url("/src/assets/svg/meal.svg") no-repeat 20px 20px;
+}
+
+.notification{
+  --border-color: var(--silver);
+  --text-color: var(--silver);
+  --base-spacing: var(--spacing-20);
+  --large-spacing: var(--spacing-70);
+  --base-gap: var(--spacing-10);
+
+  position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 0.5rem;
+  background: url(/src/assets/svg/pot.svg) no-repeat var(--base-spacing) 50%;
+  padding: var(--base-spacing) var(--base-spacing) var(--base-spacing) var(--large-spacing);
+  margin-bottom: 20px;
+
+  .notification-subject{
+    font-size: var(--large);
+  }
+
+  .notification-time{
+    font-size: var(--small);
+    color: var(--green);
+    position: absolute;
+    top: var(--base-spacing);
+    right: var(--base-spacing);
+  }
+
+  .notification-content{
+    font-size: var(--medium);
+    margin-top: var(--base-gap);
+    color: var(--silver);
+  }
+
+  &.green{
+    .notification-subject{
+      color: var(--green);
+    }
+  }
+
+  &.brown{
+    .notification-subject{
+      color: var(--brown);
+    }
+    
+    .notification-time{
+      color: var(--brown);
+    }
+  }
+}
+
+.notification.brown{
+  background: url("/src/assets/svg/meal.svg") no-repeat 20px 20px;
+}
