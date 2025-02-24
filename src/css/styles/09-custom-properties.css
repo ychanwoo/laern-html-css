@@ -1,0 +1,105 @@
+@property --text-color{
+  syntax: "<color>";
+  inherits: false;
+  initial-value: orange;
+}
+
+/* 전역 변수 정의 */
+:root {
+  /* 주요 색상 */
+  --primary-color: var(--blue);
+  --secondary-color: var(--light-blue);
+  --accent-color: var(--yellow);
+  --border-color: var(--red);
+
+  /* 색상 팔레트 */
+  --white: #fff;
+  --black: #000;
+  --red: #f00;
+  --green: #0f0;
+  --blue: #00f;
+  --orange: orange;
+  --yellow: yellow;
+  --light-blue: aqua;
+
+  /* size */
+  --small: 0.75rem;
+  --medium: 0.875rem;
+  --default: 1rem;
+  --large: 1.125rem;
+  --text12:0.75rem;
+}
+
+.text-card-1 {
+  /* 지역 변수 정의 */
+  --bg-color: var(--green);
+  --border-color: var(--red);
+
+  /* --green 속성이 없을 때 #2ecc71가 적용됨 */
+  h1{
+    background-color: var(--bg-color);
+  }
+
+  p{
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--border-color);
+  }
+}
+/* 전역 변수보다 지역 변수가 우선 */
+
+.text-card-2 {
+  /* 지역 변수 정의 */
+  --bg-color: var(--blue);
+  --border-color: var(--green);
+
+  /* --green 속성이 없을 때 #2ecc71가 적용됨 */
+  h1{
+    background-color: var(--bg-color);
+  }
+
+  p{
+    border-width: 10px;
+    border-style: solid;
+    border-color: var(--border-color);
+  }
+}
+
+
+.wrapper{
+  --font-size: var(--small);
+  --bg-color: var(--green);
+  --text-color: var(--red);
+
+  /* 모든 버튼 요소에 동일한 속성 부여 */
+  button{
+    font-size: var(--font-size, 1rem);
+    background-color: var(--bg-color, #fff);
+    color: var(--primary-color, #000);
+  }
+
+  button.open{
+    --bg-color: var(--green);
+    --text-color: var(--red);
+  }
+  button.close{
+    --font-size: var(--default);
+  }
+  button.popup{
+    --text-color: var(--blue);
+  }
+  button.info{
+    --bg-color: var(--white);
+  }
+}
+
+.container{
+  color: var(--text-color);
+  .parent{
+    --text-color: blue;
+    .child{
+      color: var(--text-color);
+    }
+  }
+  
+}
