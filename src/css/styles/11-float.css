@@ -1,0 +1,44 @@
+@import "/src/common/theme.css";
+/* CSS의 display 속성으로 특정 영역 보이지 않도록 설정 */
+/* .mon-friend-son{
+  display: none;
+} */
+
+/* float 사용하기 */
+.card{
+  background-color: var(--pastel-pink);
+  border: 1px solid green;
+
+  .thumbnail{
+    background: var(--pastel-yellow);
+    /* float으로 인해 부모 요소인 thumbnail이 인식하지 못하는 높이를 포함하도록 BFC를 설정 */
+    /* overflow: auto; */
+    /* display: flow-root; */
+    /* width: 100%; */
+    float: left;
+    border: 1px solid red;
+
+    img{
+      /* position: relative;
+      top: -50px;
+      right: -50px;*/
+      float: left;
+      width: 100px;
+      vertical-align: middle;
+      /* vertical-align: top; */
+      /* display: block; 이미지 아래쪽 여백을 없애기 위한 트릭*/
+    }
+  }
+
+  .subject {
+    background: var(--pastel-blue);
+  }
+
+  .content{
+    /* float효과를 해제하기 위해 clear 속성 사용 가능 */
+    /* clear 속성은 block 성향을 갖는 요소에만 지정 가능 */
+    clear: both;
+    background: var(--pastel-orange);
+  }
+}
+
