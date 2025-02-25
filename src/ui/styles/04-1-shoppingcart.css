@@ -1,0 +1,134 @@
+body{
+  margin: 100px;
+}
+
+.container{
+  border: 6px solid #4D4D4D;
+  border-radius: 5%;
+  position: relative;
+}
+.container {
+  border: 6px solid #4D4D4D;
+  border-radius: 5%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top:  20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+
+.titleImg{
+  background: url(/src/assets/svg/cart.svg) no-repeat;
+  margin-left: 40px;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  .title{
+    padding-left: 40px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #4D4D4D;
+  }
+}
+
+.firstLine{
+  border: 1px solid #4D4D4D;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.secondLine{
+  border: 1px solid #4D4D4D;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.milk{
+  background: url(/src/assets/svg/milk.svg) no-repeat;
+  position: relative;
+  left: 50px;
+
+  .milkContent{
+    position: relative;
+    bottom: 10px;
+    left: 80px;
+  }
+
+  .countMilk{
+    border: 1px solid #4D4D4D;
+    background-color: #EEEEEE;
+    width: 50px;
+    height: 20px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-radius: 0.7rem;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+  }
+}
+
+.kong{
+  background: url(/src/assets/svg/kong.svg) no-repeat;
+  position: relative;
+  left: 50px;
+
+  .kongContent{
+    position: relative;
+    bottom: 10px;
+    left: 80px;
+  }
+
+  .countKong{
+    border: 1px solid #4D4D4D;
+    background-color: #EEEEEE;
+    width: 50px;
+    height: 20px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-radius: 0.7rem;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+  }
+}
+
+.tofu{
+  background: url(/src/assets/svg/tofu.svg) no-repeat;
+  position: relative;
+  left: 50px;
+
+  .tofuContent{
+    position: relative;
+    bottom: 10px;
+    left: 80px;
+  }
+
+  .countTofu{
+    border: 1px solid #4D4D4D;
+    background-color: #EEEEEE;
+    width: 50px;
+    height: 20px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    border-radius: 0.7rem;
+    position: absolute;
+    top: 20px;
+    right: 80px;
+  }
+}
+
+  .totalBox{
+    display: flow-root;
+
+    .total{
+      color: #4D4D4D;
+      font-size: 20px;
+      font-weight: 700;
+      float: right;
+      margin-right: 30px;
+    }
+  }
+
+
