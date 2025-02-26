@@ -4,15 +4,16 @@
 .case-01{
   background-color: yellow;
   margin: 20px;
-  width: 360px;
   border: 2px solid red;
   border-radius: 4px;
 
   ul{
+    width: 360px;
     background: pink;
     font-size: 0;
     padding: 10px;
     margin: 0 auto;
+    border: 2px solid blue;
   }
 
   li{
@@ -36,6 +37,7 @@
     padding: 10px;
     margin: 0 auto;
     display: flow-root;
+    border: 2px solid blue;
   }
 
   li{
