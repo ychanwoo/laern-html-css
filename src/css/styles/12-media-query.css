@@ -4,20 +4,22 @@
 /* media크기에 상관 없이 적용될 배경색 */
 body {
   background: blue;
+  font-size: 1.5rem;
+
+  /* 뷰포트(600px) 크기에 따라 적용될 배경색 */
+  @media (min-width: 600px){
+      background: pink;
+      font-size: 2rem;
+  }
+
+  /* 뷰포트(1000px) 크기에 따라 적용될 배경색 */
+  @media (min-width: 1000px){
+      background: lime;
+      font-size: 2.5rem;
+  }
+
 }
 
-/* 뷰포트(600px) 크기에 따라 적용될 배경색 */
-@media (min-width: 600px){
-  body{
-    background: pink;
-  }
-}
-/* 뷰포트(1000px) 크기에 따라 적용될 배경색 */
-@media (min-width: 1000px){
-  body{
-    background: lime;
-  }
-}
 
 /* 가로 보기모드에서 적용될 배경색 */
 /* @media (orientation: landscape) {
