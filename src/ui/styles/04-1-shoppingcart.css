@@ -2,19 +2,14 @@ body{
   margin: 100px;
 }
 
-.container{
-  border: 6px solid #4D4D4D;
-  border-radius: 5%;
-  position: relative;
-}
 .container {
+  width: 700px;
   border: 6px solid #4D4D4D;
   border-radius: 5%;
   position: relative;
   display: flex;
   flex-direction: column;
   top:  20px;
-  padding-bottom: 20px;
   overflow: hidden;
 }
 
@@ -22,10 +17,14 @@ body{
 .titleImg{
   background: url(/src/assets/svg/cart.svg) no-repeat;
   margin-left: 40px;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  position: relative;
+  top: 40px;
+  /* margin-top: 50px; */
+  /* margin-bottom: 20px; */
   .title{
-    padding-left: 40px;
+    position: relative;
+    bottom: 28px;
+    left: 40px;
     font-size: 1.5rem;
     font-weight: 700;
     color: #4D4D4D;
@@ -48,12 +47,21 @@ body{
   background: url(/src/assets/svg/milk.svg) no-repeat;
   position: relative;
   left: 50px;
+  display: flow-root;
 
   .milkContent{
+    float: left;
     position: relative;
-    bottom: 10px;
+    bottom: 8px;
     left: 80px;
+
+    .price{
+      position: relative;
+      bottom: 10px;
+      font-weight: 700;
+    }
   }
+
 
   .countMilk{
     border: 1px solid #4D4D4D;
@@ -69,15 +77,24 @@ body{
   }
 }
 
+
 .kong{
   background: url(/src/assets/svg/kong.svg) no-repeat;
   position: relative;
   left: 50px;
+  display: flow-root;
 
   .kongContent{
+    float: left;
     position: relative;
-    bottom: 10px;
+    bottom: 8px;
     left: 80px;
+
+    .price{
+      position: relative;
+      bottom: 10px;
+      font-weight: 700;
+    }
   }
 
   .countKong{
@@ -98,11 +115,19 @@ body{
   background: url(/src/assets/svg/tofu.svg) no-repeat;
   position: relative;
   left: 50px;
+  display: flow-root;
 
   .tofuContent{
+    float: left;
     position: relative;
-    bottom: 10px;
+    bottom: 8px;
     left: 80px;
+
+    .price{
+      position: relative;
+      bottom: 10px;
+      font-weight: 700;
+    }
   }
 
   .countTofu{
@@ -119,16 +144,12 @@ body{
   }
 }
 
-  .totalBox{
-    display: flow-root;
-
-    .total{
-      color: #4D4D4D;
-      font-size: 20px;
-      font-weight: 700;
-      float: right;
-      margin-right: 30px;
-    }
-  }
-
-
+.total{
+  color: #4D4D4D;
+  font-size: 20px;
+  font-weight: 700;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
