@@ -83,3 +83,26 @@ body *::after{
 
   
 }
+
+
+.container{
+  border: 1px solid red;
+  margin: 50px;
+  inline-size: 502px;
+  block-size: 402px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-evenly;
+
+  [class*="box"]{
+    background: var(--pastel-yellow);
+    border: 1px solid currentColor;
+    inline-size: 100px;
+    block-size: 100px;
+    margin-inline: 10px;
+    text-align: center;
+    align-content: center;
+    justify-content: space-between;
+  }
+}
