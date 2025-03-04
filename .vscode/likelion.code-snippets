@@ -88,4 +88,13 @@
     ],
     "description": "새로운 템플릿",
   },
+  "css 기본 import": {
+    "prefix": "components-import",
+    "body": [
+      "@import '/src/common/modern-reset.css';",
+      "@import '/src/common/login-theme.css';",
+      "@import '/src/common/a11y.css';",
+      "@import '/src/common/base.css';"
+    ]
+  },
 }
