@@ -1,0 +1,53 @@
+@import '/src/common/modern-reset.css';
+@import '/src/common/login-theme.css';
+@import '/src/common/a11y.css';
+@import '/src/common/base.css';
+
+/* 체크박스 (배경이미지) */
+.checkbox{
+  --size: 1.5rem;
+  display: inline-flex;
+  height: var(--size);
+  block-size: var(--size);
+  position: relative;
+
+  /* .checkbox 컨테이너 안에 자식 요소 중 .bg-img 클래스카 있을 경우 input 요소를 선택 */
+  &:has(.bg-img) input{
+    position: absolute;
+    top: 0;
+    /* 논리단위로 inset-block-start: 0; */
+    left: 0;
+    /* 논리단위로 inset-inline-start: 0; */
+    margin: 0;
+    /* width: 100%; */
+    width: var(--size);
+    height: var(--size);
+    appearance: none;
+  }
+
+  /* checkbox 내 input 요소를 선택 */
+  /* input{ 
+    position: absolute;
+    top: 0;
+    논리단위로 inset-block-start: 0;
+    left: 0;
+    논리단위로 inset-inline-start: 0;
+    margin: 0;
+    width: 100%;
+    width: var(--size);
+    height: var(--size);
+    appearance: none;
+  } */
+
+  label.bg-img{
+    background: url(/src/assets/naver/unchecked.svg) no-repeat;
+    padding-left: 1.875rem;
+    /* padding-inline-start: 1.875rem; */
+    /* text-indent: 2rem; */
+    align-content: center;  /*내 아이템 기준 세로정렬*/
+  }
+
+  input:checked + label.bg-img{
+    background-image: url(/src/assets/naver/checked.svg);
+  }
+}
