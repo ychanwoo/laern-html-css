@@ -15,29 +15,21 @@
   &:has(.bg-img) input{
     position: absolute;
     top: 0;
-    /* 논리단위로 inset-block-start: 0; */
     left: 0;
-    /* 논리단위로 inset-inline-start: 0; */
     margin: 0;
-    /* width: 100%; */
     width: var(--size);
     height: var(--size);
     appearance: none;
   }
 
-  /* checkbox 내 input 요소를 선택 */
-  /* input{ 
-    position: absolute;
-    top: 0;
-    논리단위로 inset-block-start: 0;
-    left: 0;
-    논리단위로 inset-inline-start: 0;
-    margin: 0;
-    width: 100%;
-    width: var(--size);
-    height: var(--size);
-    appearance: none;
-  } */
+  input:focus{
+     input:focus{
+      outline: 0;
+      box-shadow: 0 0 0 1px var(--blue-900);
+      box-shadow: 0 0 0 1px var(--red-500);
+      border-radius: var(--rounded-xs);
+    }
+  }
 
   label.bg-img{
     background: url(/src/assets/naver/unchecked.svg) no-repeat;
@@ -55,7 +47,6 @@
 
 /* 체크박스 (svg요소) */
 .checkbox.svg{
-  background: pink;
   display: inline-flex;
   align-items: center;
   column-gap: 6px;
