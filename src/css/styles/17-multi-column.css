@@ -58,10 +58,10 @@
 .wrapper{
   background: var(--pastel-lemon);
   padding: 1em;
-  columns: 4;
+  columns: 3;
   
-  .case{
-    break-after: avoid;
+  .case-02{
+    break-before: column;
     border: 1px solid red;
   }
 }
