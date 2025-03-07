@@ -63,3 +63,13 @@
   from {--rotation: 0deg;}
   to { --rotation: 360deg;}
 }
+
+@property --rotation{
+  syntax: "<angle>";
+  inherits: false;
+  initial-value: 0deg;
+}
+@keyframes rotate {
+  from {--rotation: 0deg;}
+  to {--rotation: 360deg;}
+}
